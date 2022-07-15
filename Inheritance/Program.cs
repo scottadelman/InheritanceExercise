@@ -28,12 +28,29 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Bird penguin = new Bird();
+            penguin.doesItFly = false;
+            penguin.soundItMakes = "Penguin noises";
+            penguin.canItSwim = "yes I can swim";
+            penguin.whatDoesItEat = "Fish";
+            penguin.doesItHaveTeeth = false;
+
+            Console.WriteLine($" I am a penguin and I eat {penguin.whatDoesItEat}, when I speak I make {penguin.soundItMakes}, you may ask if I can swim, the answer is {penguin.canItSwim}");
+            Console.WriteLine();
+
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            Reptile turtle = new Reptile();
+            turtle.canItSwim = "yes I can swim";
+            turtle.likeToPlay = false;
+            turtle.soundItMakes = "Turtle noise";
+            turtle.numberOfLegs = 4;
+            turtle.doesItHaveTeeth = false;
+            Console.WriteLine($"I am a turtle and I have {turtle.numberOfLegs} legs! People think that I might have teeth but that is {turtle.doesItHaveTeeth}. I live in the water so {turtle.canItSwim}");
         }
     }
 }
